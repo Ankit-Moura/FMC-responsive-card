@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --card-left-margin : 1.5rem;
+    }
+    html {
+    font-size: clamp(14px, 1.2vw, 18px);
+     }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .card {max-width: 400px; background-color: white; overflow: hidden; width: calc(100vw - 2.4rem);box-shadow: 7px 7px 0px rgba(0, 0, 0, 1); border-radius: 12px; border: 2px solid black; margin: 1.2rem; padding-right: 0.2rem;}
+    body{display: grid; place-items: center; border: 2px solid black ; height: 100vh; background-color: hsl(47, 88%, 63%);}
+    .card > img:first-child{
+      display: block;
+      margin: 1.8rem auto;
+      border-radius: .5rem;
+      width: calc(100% - 20%);
+    } 
+    .card> span:first-of-type{
+      background-color: hsl(47, 88%, 63%);
+      margin-left:  var(--card-left-margin);
+      display: inline-block;
+      border-radius: .5rem;
+      padding: 0.25rem 0.75rem;
+      font-weight: bold;
+      font-size: 0.875rem;
+      margin-bottom: 1.2rem;
+    }
+    .date{
+      margin-left: var(--card-left-margin);
+      display: block;
+      margin-bottom: .8rem;
+    }
+    .title{
+      margin-left: var(--card-left-margin);
+      display: block;
+      margin-bottom: .8rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .title:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    .desc{
+      margin-left: var(--card-left-margin);
+      color: hsl(0, 0%, 42%);
+      margin-bottom: .6rem;
+    }
+    .card>img:last-of-type{
+      margin-left: var(--card-left-margin);
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-bottom: .4rem;
+    }
+    .card>span:last-of-type{
+      margin-left: 0.2rem;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/assets/images/illustration-article.svg" alt="">
+  <span>Learning</span><span class="date">Published 21 Dec 2023</span><span class="title">Html & CSS foundations</span> <p class="desc">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+  <img src="/assets/images/image-avatar.webp" alt="">
+  <span>Greg Hooper</span>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
